@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dartgame</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css" />
+        <script src="socket.io/socket.io.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="game.js"></script>
+    </head>
+    <body>
+        <header class="theme" style="text-align:center; font-weight: 500; padding:3px;">Fabian's DartCounter</header>
+        <div class="content">
+             <table id="player_list" align="center"> 
+             <colgroup>
+                <col>
+                <col>
+                 </colgroup>
+             <thead>
+              <tr>
+                <th></th>
+                <th>Nr.</th> 
+                <th>Name</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              known_users
+              </tbody>
+            </table> 
+         </div>
+    <div class="top_bar">
+        <div class="fi_bt">
+         <footer class="theme" style="text-align:center; vertical-align:middle">
+        <ul id="msg" class="w3-ul">
+        </ul>
+            <input id="name" type="text" class="input" placeholder="dein Name" />
+            <input id="adduser" type="submit" class="button" value="Hinzufügen" />
+            <input id="startgame" type="submit" class="button" value="Spiel starten" />
+        </footer>
+</div></div>
+    </body>
+</html>

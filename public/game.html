@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dartgame</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="socket.io/socket.io.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="game.js"></script>
+        <style>
+        * {-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;} /* for th's width; display purpose */
+        </style>
+    </head>
+    <body>
+        <header class="theme" style="text-align:center; font-weight: 500; padding:3px;">Fabian's DartCounter</header>
+        <div class="content">
+             <table id="player">
+             <thead>
+              <tr>
+                <th>Nr.</th> 
+                <th>Name</th>
+                <th>Score</th>
+                <th class="edit_score"></th>
+              </tr>
+              </thead>
+              <tbody style="overflow:scroll;">
+              </tbody>
+
+            </table> 
+         </div>
+<div class="top_bar">
+<div class="fi_bt">
+         <footer class="theme" style="text-align:center; vertical-align:middle">
+        <ul id="msg" class="w3-ul">
+        </ul>
+        <div id="score" class="" style="display: none;" >
+            <input id="number" class="input" type="number">
+            <input id="score_1" type="submit" class="button" value="1x" />
+            <input id="score_2" type="submit" class="button" value="2x" />
+            <input id="score_3" type="submit" class="button" value="3x" />
+        </div>
+        <div class="">
+            <input id="nextplayer" type="submit" class="button" style="display: none;" value="Nächster Spieler" />
+            <input id="endgame" type="submit" class="button" style="display: none;" value="Spiel beenden" />
+            <input id="restartgame" type="submit" class="button" style="display: none;" value="Spiel neu starten" />
+        </div>
+        </footer>
+</div></div>
+    </body>
+</html>
